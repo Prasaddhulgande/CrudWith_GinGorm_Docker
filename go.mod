@@ -1,6 +1,8 @@
-module Gin-Gorm-rest-Docker
+module GIN-GORM-REST-DOCKER
 
-go 1.25.0
+go 1.23.0
+
+require github.com/gin-gonic/gin v1.11.0
 
 require (
 	github.com/bytedance/gopkg v0.1.4 // indirect
@@ -9,7 +11,6 @@ require (
 	github.com/cloudwego/base64x v0.1.7 // indirect
 	github.com/gabriel-vasile/mimetype v1.4.13 // indirect
 	github.com/gin-contrib/sse v1.1.1 // indirect
-	github.com/gin-gonic/gin v1.12.0 // indirect
 	github.com/go-playground/locales v0.14.1 // indirect
 	github.com/go-playground/universal-translator v0.18.1 // indirect
 	github.com/go-playground/validator/v10 v10.30.3 // indirect
@@ -26,7 +27,6 @@ require (
 	github.com/quic-go/quic-go v0.60.0 // indirect
 	github.com/twitchyliquid64/golang-asm v0.15.1 // indirect
 	github.com/ugorji/go/codec v1.3.1 // indirect
-	go.mongodb.org/mongo-driver/v2 v2.7.0 // indirect
 	golang.org/x/arch v0.28.0 // indirect
 	golang.org/x/crypto v0.53.0 // indirect
 	golang.org/x/net v0.56.0 // indirect
