@@ -2,14 +2,13 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
+	"gin-gorm-rest-docker/routes"
 )
 func main() {
     
 	router := gin.Default()
 
-	router.GET("/", func(c *gin.Context){
-		c.String(200, "Hello World!")
-	})
+	routes.UserRoute(router)
 
 	router.Run(":8000")
 }
