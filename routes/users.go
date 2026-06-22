@@ -1,9 +1,9 @@
 package routes
 
-import "github.com/gin-gonic/gin"
+import ("github.com/gin-gonic/gin"
+        "gin-gorm-rest-docker/controller"
+)
 
-func UserRoute(router *gin.Engine){
-	router.GET("/", func(c *gin.Context){
-		c.String(200, "Hello World")
-	})
+func GetUsers(router *gin.Engine){
+	router.GET("/", controller.UserController)
 }

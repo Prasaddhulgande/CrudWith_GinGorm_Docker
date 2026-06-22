@@ -8,7 +8,7 @@ func main() {
     
 	router := gin.Default()
 
-	routes.UserRoute(router)
+	routes.GetUsers(router)
 
 	router.Run(":8000")
 }
